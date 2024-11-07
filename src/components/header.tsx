@@ -1,5 +1,6 @@
 import React from "react";
-import { NavigationMenuDemo } from "@/components/header/navigation_menu";
+import { HeaderMenu } from "@/components/header/header_menu";
+import { ThemeToggle } from "./theme-toggle";
 
 const Header = () => (
   <header className="sticky top-0 z-20 h-[57px] bg-white dark:bg-[hsl(218,_13%,_12%,_.95)] w-full max-w-full flex items-center border-b border-dashed border-blue-200 dark:border-blue-300/15">
@@ -12,8 +13,13 @@ const Header = () => (
         dir="ltr"
         className="relative z-[2] md:max-w-[1248px] md:mx-auto w-full py-3 px-4 md:px-6 flex justify-between gap-4 lg:gap-0"
       >
-        <div className="flex gap-3 items-center flex-none">
-          <NavigationMenuDemo />
+        <div className="w-full flex gap-3 items-center flex-none flex-row justify-between">
+          <div className="">
+            <HeaderMenu />
+          </div>
+          <div className="">
+            <ThemeToggle />
+          </div>
         </div>
       </nav>
     </div>

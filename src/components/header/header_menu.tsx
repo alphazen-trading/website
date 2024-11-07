@@ -52,17 +52,15 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
-export function NavigationMenuDemo() {
+export function HeaderMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <p className="text-xl font-mono font-bold mr-10">ALPHAZEN</p>
+          <p className="text-xl font-mono font-bold mr-6 pt-[5px] ">ALPHAZEN</p>
         </NavigationMenuItem>
-        <NavigationMenuItem className="bg-transparent">
-          <NavigationMenuTrigger className="bg-transparent">
-            Components
-          </NavigationMenuTrigger>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -77,7 +75,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem className="bg-transparent">
+        <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink
               className={`${navigationMenuTriggerStyle()} bg-transparent`}
