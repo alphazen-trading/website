@@ -1,4 +1,4 @@
-import { BookOpen, Download, Github } from "lucide-react";
+import { BookOpen, Github } from "lucide-react";
 import { Button } from "./ui/button";
 
 const BackgroundPattern = () => (

@@ -3,13 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { DiVim } from "react-icons/di";
 
 export function ThemeToggle() {
   const [theme, setThemeState] = useState<"theme-light" | "dark" | "system">(
@@ -27,7 +20,6 @@ export function ThemeToggle() {
       (theme === "system" &&
         window.matchMedia("(prefers-color-scheme: dark)").matches);
     document.documentElement.classList[isDark ? "add" : "remove"]("dark");
-    const isDarkMode = document.documentElement.classList.contains("dark");
   }, [theme]);
 
   return (
