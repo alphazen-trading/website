@@ -1,5 +1,5 @@
 import React from "react";
-import { NavigationMenuDemo } from "@/components/header/navigation_menu";
+import { HeaderMenu } from "@/components/header/header_menu";
 import { ThemeToggle } from "./theme-toggle";
 
 const Header = () => (
@@ -15,7 +15,7 @@ const Header = () => (
       >
         <div className="w-full flex gap-3 items-center flex-none flex-row justify-between">
           <div className="">
-            <NavigationMenuDemo />
+            <HeaderMenu />
           </div>
           <div className="">
             <ThemeToggle />

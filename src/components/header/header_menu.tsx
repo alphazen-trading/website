@@ -52,7 +52,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
-export function NavigationMenuDemo() {
+export function HeaderMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
