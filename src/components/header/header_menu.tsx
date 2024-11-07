@@ -15,8 +15,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Separator } from "@/components/ui/separator";
 
-const linkExtra = "bg-transparent text-gray-700";
-
 const menuItems = [
   { href: "/zenbt", label: "ZenBT" },
   { href: "/zentrade", label: "ZenTrade" },
@@ -29,12 +27,12 @@ export function HeaderMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <div className="flex flex-row mr-4">
-            <p className="text-primary text-xl font-inter font-bold mr-6 pt-[5px] ">
+          <div className="flex flex-row mr-2">
+            <p className="text-primary text-xl font-inter mr-6 pt-[5px] ">
               ALPHAZEN
             </p>
             <Separator
-              className="w-[2px] h-[35px]"
+              className="w-[2px] h-[35px] "
               orientation="vertical"
               decorative
             />
@@ -45,7 +43,7 @@ export function HeaderMenu() {
           <NavigationMenuItem key={item.href}>
             <Link href={item.href} legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${linkExtra}`}
+                className={`${navigationMenuTriggerStyle()} bg-transparent text-gray-700`}
               >
                 {item.label}
               </NavigationMenuLink>

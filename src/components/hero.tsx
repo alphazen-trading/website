@@ -36,16 +36,7 @@ const Hero = () => {
 
         <div className="mx-auto text-gray-500">
           <a href="https://pypi.org/project/zenbt/" target="_blank">
-            <Button className="mr-4 bg-blue-600 shadow-lg dark:text-white hover:bg-blue-500">
-              <Download />
-              Download now
-            </Button>
-          </a>
-          <a href="https://pypi.org/project/zenbt/" target="_blank">
-            <Button
-              variant="outline"
-              className="mr-4 shadow-sm dark:text-white"
-            >
+            <Button className="mr-4 bg-black shadow-lg dark:text-white hover:bg-blue-500">
               <Github />
               Clone Source
             </Button>
