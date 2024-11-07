@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const lora = Lora({
   variable: "--font-lora",
+  subsets: ["latin"],
 });
 const inter = Inter({
   subsets: ["latin"],
