@@ -28,7 +28,7 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
-          forcedTheme
+          forcedTheme="light"
           enableSystem
         >
           <div className="font-inter">{children}</div>
