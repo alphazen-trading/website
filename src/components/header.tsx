@@ -1,6 +1,7 @@
 import React from "react";
 import { HeaderMenu } from "@/components/header/header_menu";
 import { ThemeToggle } from "./theme-toggle";
+import CommandMenu from "@/components/cmdk";
 
 const Header = () => (
   <header className="sticky top-0 z-20 h-[57px] bg-white dark:bg-[hsl(218,_13%,_12%,_.95)] w-full max-w-full flex items-center border-b border-dashed border-blue-200 dark:border-blue-300/15">
@@ -17,7 +18,8 @@ const Header = () => (
           <div className="">
             <HeaderMenu />
           </div>
-          <div className="">
+          <div className="flex flex-row">
+            <CommandMenu />
             <ThemeToggle />
           </div>
         </div>

@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Header from "@/components/header.tsx";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div>
       <Header />
 
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          Alpha Zen
-        </main>
+      <div className="mx-3 md:mx-12 grow border-r border-l border-dashed border-blue-200 dark:border-blue-300/15">
+        <Hero />
       </div>
     </div>
   );
