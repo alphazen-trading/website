@@ -13,9 +13,9 @@ import {
 import { Separator } from "@/components/ui/separator";
 
 const menuItems = [
-  { href: "/zenbt", label: "ZenBT" },
-  { href: "/zentrade", label: "ZenTrade" },
-  { href: "/tradingtoolbox", label: "Trading Toolbox" },
+  { href: "https://zenbt.alphazen.xyz/", label: "ZenBT" },
+  // { href: "/zentrade", label: "ZenTrade" },
+  { href: "https://tradingtoolbox.alphazen.xyz/", label: "Trading Toolbox" },
 ];
 export default NavigationMenu;
 
@@ -41,6 +41,7 @@ export function HeaderMenu() {
             <Link href={item.href} legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} bg-transparent text-gray-700`}
+                target="_blank"
               >
                 {item.label}
               </NavigationMenuLink>
